@@ -15,6 +15,6 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       - name: Attendre le déploiement sur github pages
-        run: sleep 70
+        run: sleep 60
       - run: npm install
       - run: npx blc https://jeremydallain.github.io/isfac-ci-cd -v
